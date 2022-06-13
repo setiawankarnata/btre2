@@ -123,3 +123,8 @@ MESSAGE_TAGS = {
     messages.INFO: '',
     50: 'Critical',
 }
+
+try:
+    from .local_settings import *
+except ImportError:
+    pass
